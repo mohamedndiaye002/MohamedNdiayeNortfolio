@@ -19,9 +19,6 @@
         justify-self: baseline;
     }
 
-    .myExperience p {
-        font-size: 23px;
-    }
     .contactDivInfo div h1{
         font-size: 13px;
     }
@@ -32,6 +29,13 @@
 
     .aboutMeDiv p{
         font-size: 13px;
+    }
+    .myExperience legend{
+        font-size: 18px;
+    }
+
+    .myExperience p{
+        font-size: 20px;
     }
 }
 
@@ -169,10 +173,16 @@
         display: none;
     }
 
+    .containerContact{
+        height: 180vh;
+    }
     .contactSection{
         align-items: center;
         justify-content: center;
+        height: 160vh;
     }
+
+
 
     .contactSection h1{
         font-size: 17px;
@@ -190,7 +200,7 @@
     }
 
     .contactDivInfo div {
-        width: 50%;
+        width: 90%;
         height: 25%;
         line-height: 100%;
     }
@@ -255,6 +265,9 @@
     }
     .aboutMeDiv p{
         font-size: 11.5px;
+    }
+    .myExperience p{
+        font-size: 18px;
     }
 }
 
@@ -588,7 +601,14 @@
     }
 
     .myExperience legend {
-        font-size: 14px;
+        font-size: 13px;
+    }
+
+    .contactMe form label{
+        font-size: 13px;
+    }
+    .contactMe form input{
+        font-size: 12px;
     }
 
 
@@ -601,6 +621,10 @@
 
     .copyright{
         font-size: 12px;
+    }
+
+    #callMe{
+        font-size: 18px;
     }
 }
 
@@ -698,6 +722,21 @@
     }
 
 
+    .myExperience p{
+        font-size: 12px;
+    }
+
+    .contactMe form label{
+        font-size: 11px;
+    }
+    .contactMe form input{
+        font-size: 10px;
+    }
+
+    #callMe{
+        font-size: 15px;
+    }
+
 }
 
 
@@ -715,4 +754,14 @@
         font-size: 8px;
     }
 
+    .myExperience p{
+        font-size: 10px;
+    }
+
+    .contactMe form label{
+        font-size: 10px;
+    }
+    .contactMe form input{
+        font-size: 10px;
+    }
 }
