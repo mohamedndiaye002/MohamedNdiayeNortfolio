@@ -1,0 +1,910 @@
+/* LES POLICES */
+
+
+@font-face{
+    font-family: 'poppins';
+    src: url('../fonts/Poppins-Regular.ttf')format('ttf');
+}
+
+
+
+/* Les ANIMATIONS */
+
+@keyframes rotateP {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes rotateN {
+    from {
+        transform: rotate(45deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes slide2 {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 0.9;
+    }
+}
+
+@keyframes reveal {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+}
+
+@keyframes etirer {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
+
+@keyframes clignot {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+    min-height: 100vh;
+}
+
+
+.container {
+    backdrop-filter: blur(5px);
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    /* border: 2px solid red; */
+    height: 650vh;
+}
+
+
+
+/* Styles of The Presentation section-------------------------------------------------------------------------------------------------------------------------*/
+/* Styles of The Presentation section-------------------------------------------------------------------------------------------------------------------------*/
+.containerMe {
+    background: url(../images/bg.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 200vh;
+    transition: 2s ease;
+}
+
+.containerMeHided {
+    height: 140vh;
+}
+
+.meSectionBG {
+    color: aliceblue;
+    background: url('../images/mathus.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 70%;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.meSectionBGHided {
+    height: 140vh;
+}
+
+
+
+
+/* Style of the Header----------------------------------------------------------- */
+/* Style of the Header----------------------------------------------------------- */
+
+header {
+    border: 1px solid;
+    background-color: #122236;
+    position: absolute;
+    left: 1.5%;
+    right: 1.5%;
+    height: 15vh;
+    top: 2.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* border-radius: 20px; */
+    box-shadow: 0px 2px 7px #BDD9FC;
+}
+
+.afficherMenu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    /* border: 1px solid; */
+    padding: 1%;
+    border-radius: 10px;
+    width: 60%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: #BDD9FC;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    font-weight: 500;
+    text-shadow: 1px 1px 10px black;
+    padding: 0;
+    text-decoration: underline 3px #4D8DDB;
+    text-underline-offset: 70%;
+}
+
+
+.menuHided {
+    display: none;
+}
+
+#portfolio {
+    /* border: 1px solid red; */
+    font-size: 70px;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 3px;
+    transform: skewX(15deg);
+    color: transparent;
+    -webkit-text-stroke: 2px #BDD9FC;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #BDD9FC 30%, #4D8DDB, #122236);
+}
+
+/* END Style of the Header----------------------------------------------------------- */
+
+
+
+/* Style of the presentation------------------------------------------------------------- */
+/* Style of the presentation------------------------------------------------------------- */
+
+.meSection {
+    border-radius: 10px;
+    box-shadow: inset -1px 2px 10px #4D8DDB;
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profil {
+    width: 90%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+    transition: 1.5s ease;
+}
+
+.profilHided {
+    transition: 0.6s ease;
+    margin-top: 40vh;
+}
+
+.profil span {
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 100%;
+    transition: 0.5s ease;
+}
+
+.profil span b {
+    line-height: 90%;
+    font-size: 60px;
+    letter-spacing: 10px;
+    -webkit-text-stroke: 2px #4D8DDB;
+    transition: 0.5s ease;
+}
+
+
+
+
+.profil span u {
+    text-underline-offset: 10px;
+    transition: 0.5s ease;
+}
+
+
+.profilPicture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 30px #BDD9FC;
+    animation: etirer 2s infinite alternate-reverse;
+    transition: 1.5s ease;
+}
+
+
+.whoAmI {
+    border: 1px solid #4D8DDB;
+    border-radius: 10px;
+    padding: 1%;
+    font-size: 400%;
+    /* width: 70%; */
+    margin-right: 5%;
+    font-weight: 100;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: last baseline;
+    transition: 0.5s ease;
+}
+
+.whoAmI a {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+}
+
+#myFunction {
+    padding-left: 10px;
+    color: #122236;
+    -webkit-text-stroke: 1.5px #BDD9FC;
+    border-right: 1px solid #4D8DDB;
+    animation: clignot 0.75s steps(1) infinite;
+    transition: 0.5s ease;
+}
+
+.reseauLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transition: 1.5s ease;
+    width: 70%;
+    height: fit-content;
+}
+
+.reseauLogo a{
+    display: flex;
+    height: fit-content;
+}
+
+
+
+.aboutMe{
+    height: 100vh;
+    width: 100%;
+    background-color: #122236;
+    position: absolute;
+    top: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aboutMe h1{
+    width: 100%;
+    text-align: center;
+    color: white;
+
+}
+
+.aboutMeDiv{
+    width: 40%;
+    height: 40vh;
+    color: white;
+    padding: 0 3%;
+    border: 1px solid #4D8DDB;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #4D8DDB;
+}
+
+.aboutMeDiv h2{
+    color: #4D8DDB;
+    font-size: 15px;
+}
+
+.aboutMe p{
+    text-align: justify;
+}
+
+.aboutMeDiv p abbr{
+    text-underline-offset: 5px;
+}
+
+
+/* END Style of the presentation------------------------------------------------------------------- */
+
+
+
+/* Style of the Competence Section--------------------------------------------------------------------------------------------------------------------------- */
+/* Style of the Competence Section--------------------------------------------------------------------------------------------------------------------------- */
+
+
+.containerCompetence {
+    height: 320vh;
+}
+
+
+
+.containerCompetenceHided {
+    height: 345vh;
+}
+
+
+.competenceSection {
+    border-radius: 10px;
+    background-color: #122236;
+    /* opacity: 0.8; */
+    position: absolute;
+    color: aliceblue;
+    top: 20vh;
+    left: 0;
+    right: 0;
+    height: 300vh;
+    box-shadow: inset -1px 2px 10px #4D8DDB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: none;
+}
+
+.competenceSectionHided {
+    top: 45vh;
+}
+
+
+
+.subSection {
+    width: 90vw;
+    height: 50vh;
+    font-size: 01em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-wrap: wrap;
+    border-radius: 10px;
+    background-color: white;
+    color: #122236;
+    font-weight: 500;
+    box-shadow: 0px 0px 10px black;
+    text-align: justify;
+    padding: 1%;
+    line-height: 250%;
+    animation: reveal 1s linear;
+    animation-range-start: 0%;
+    animation-range-end: 20%;
+    animation-timeline: view();
+}
+
+.subSection p {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-size: 20px;
+    margin: auto;
+    justify-content: center;
+}
+
+.subSection button {
+    background-color: #BDD9FC;
+    color: #122236;
+    box-shadow: 1px 2px 20px #4D8DDB;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'poppins';
+    border-radius: 50px;
+    padding: 1% 5%;
+    transition: 0.3s ease;
+}
+
+.subSection button:hover {
+    background-color: #122236;
+    color: #4D8DDB;
+    transition: 0.2s;
+}
+
+.plusInfoDiv {
+    display: none;
+    width: 43%;
+    height: 66%;
+    border: 1px solid #122236;
+    border-radius: 10px;
+    text-align: justify;
+    font-weight: 100;
+    font-size: 25px;
+    padding: 1%;
+    transition: 1.3s ease;
+    line-height: 120%;
+    flex-direction: column;
+}
+
+.plusInfoDivDesignShow,
+.plusInfoDivDeveloppingShow,
+.plusInfoDivLinguistiqueShow,
+.plusInfoDivBureautiqueShow,
+.plusInfoDivBatimentShow {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plusInfoDivDesignShow:hover,
+.plusInfoDivDeveloppingShow:hover,
+.plusInfoDivLinguistiqueShow:hover,
+.plusInfoDivBureautiqueShow:hover,
+.plusInfoDivBatimentShow:hover {
+    box-shadow: 0px 0px 6px gray;
+    transition: 0.001s step-end;
+}
+
+
+.plusInfoDiv p {
+    width: 90%;
+}
+
+.plusInfoDiv ul {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+}
+
+.plusInfoDiv ul li {
+    font-weight: 500;
+    width: 15%;
+    padding: 0;
+    list-style: none;
+    /* height: 10vh     ; */
+}
+
+.subSection img {
+    width: 45%;
+    height: 80%;
+    border-radius: 10px;
+    transition: 0.8s ease;
+}
+
+.imageDesignHide,
+.imageDeveloppingHide,
+.imageLignuistiqueHide,
+.imageBureautiqueHide,
+.imageBatimentHide {
+    display: none;
+}
+
+.subSection img:hover {
+    box-shadow: 0px 0px 6px gray;
+    transition: 0.001s step-end;
+
+}
+
+.plusInfoDivLinguistique p {
+    font-size: 30px;
+}
+
+.plusInfoDiv .langues {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.plusInfoDiv .langues li {
+    height: auto;
+    border: none;
+    width: 100%;
+    margin: 1%;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.plusInfoDiv .langues li div {
+    width: 50%;
+    height: 10px;
+    background-color: #4D8DDB;
+    border-radius: 10px;
+}
+
+.plusInfoDiv .langues .niveauFrancais {
+    width: 80%;
+    height: 8px;
+    background-color: #122236;
+    border: 1px solid #4D8DDB;
+}
+
+.plusInfoDiv .langues .niveauAnglais {
+    width: 70%;
+    height: 8px;
+    background-color: #122236;
+    border: 1px solid #4D8DDB;
+}
+
+.plusInfoDiv .langues .niveauWolof {
+    width: 90%;
+    height: 8px;
+    background-color: #122236;
+    border: 1px solid #4D8DDB;
+}
+
+.subSectionLeft {
+    flex-wrap: wrap;
+}
+
+.subSectionRight {
+
+    flex-wrap: wrap-reverse;
+}
+
+
+
+
+.subSection span {
+    text-align: center;
+    color: #122236;
+    width: 40vw;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 150%;
+    font-size: 50px;
+    text-decoration: underline 7px;
+    text-underline-offset: 20px;
+    transition: 1.5s ease;
+}
+
+
+/* END Style of the Competence Section------------------------------------------------------------------- */
+
+
+
+/* Style of the Experience Section-------------------------------------------------------------------------------------------------------------------- */
+/* Style of the Experience Section-------------------------------------------------------------------------------------------------------------------- */
+
+.containerExperience {
+    height: 120vh;
+    background-color: #122236;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerExperienceHided {
+    height: 145vh;
+}
+
+
+
+.experienceSection {
+    box-shadow: inset -1px 2px 10px #4D8DDB;
+    border-radius: 10px;
+    background-color: #122236;
+    opacity: 0.8;
+    position: absolute;
+    color: aliceblue;
+    top: 20vh;
+    left: auto;
+    right: auto;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.myExperience {
+    color: #4D8DDB;
+    width: 40%;
+    height: 40vh;
+    text-align: justify;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myExperience p {
+    font-size: 22px;
+    font-weight: 100;
+
+}
+
+.myExperience:hover {
+    box-shadow: 0px 0px 10px white;
+    transition: 0.3s ease;
+}
+
+.myExperience legend {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    padding: 0 4%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* END Style of the Experience Section------------------------------------------------------------------- */
+
+
+
+/* Style of the Contacts Section----------------------------------------------------------------------------------------------------------------------------- */
+/* Style of the Contacts Section----------------------------------------------------------------------------------------------------------------------------- */
+
+.containerContact {
+    height: 100vh;
+    background-color: #122236;
+}
+
+.containerContactHided {
+    height: 125vh;
+}
+
+.contactSection {
+    border-radius: 10px;
+    opacity: 0.95;
+    position: absolute;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+    top: 20vh;
+    left: 0;
+    right: 0;
+    height: 80vh;
+}
+
+.contactSectionHided {
+    top: 45vh;
+}
+
+.contactDiv {
+    width: 50%;
+    height: 60vh;
+
+}
+
+.contactDivInfo{
+    border: 1px solid #4D8DDB;
+    box-shadow: 1px 2px 10px #4D8DDB;
+    width: 80%;
+    height: 100%;
+    margin:0 0 2.5% 0;
+    justify-self: center;
+    font-size: 10px;
+    display: flex;
+    flex-flow: nowrap;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.5s ease;
+}
+
+#callMe {
+    text-align: center;
+    width: 50%;
+    background-color: #BDD9FC;
+    font-size: 20px;
+    height: auto;
+    color: black;
+    box-shadow: none;
+    border-radius: 50px;
+    padding: 3% 5%;
+}
+
+.contactDivInfo div {
+    border-bottom: 1px solid;
+    border-radius: 10px;
+    padding: 0 5%;
+    color: #4D8DDB;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    box-shadow: 2px 2px 5px white;
+    line-height: 0%;
+    height: 15%;
+    width: 80%;
+}
+
+
+.contactDivInfo div h1 {
+    font-size: 17px;
+    text-decoration: underline 1px;
+    
+    color: #4D8DDB;
+    font-weight: 500;
+    text-underline-offset: 4px;
+}
+
+.contactDivInfo div h3 {
+    font-size: 15px;
+    color: #4D8DDB;
+    font-weight: 300;
+}
+
+
+.contactMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #122236;
+    width: 50%;
+    height: 60vh;
+    align-items: center;
+}
+
+
+.contactMe form{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contactMe h1{
+    text-align: center;
+    padding: 0 1%;
+    font-size: 21px;
+    text-decoration: underline 1px;
+    text-underline-offset: 10px;
+}
+
+.contactMe form label{
+    width: 20%;
+    height: 8%;
+}
+.contactMe form input{
+    box-shadow: 1px 1px 4px #4D8DDB;
+    width: 60%;
+    border: none;
+    height: 8%;
+    text-align: center;
+}
+
+
+.contactMe form input:focus{
+    background-color: #4D8DDB;
+}
+
+#subm{
+    font-family: 'poppins';
+    font-weight: 500;
+    width: 30%;
+    height: 15%;
+    border: 1px solid #4D8DDB;
+    border-radius: 10px;
+    background-color: #122236;
+    box-shadow: 0px 3px 10px #4D8DDB;
+    color: #4D8DDB;
+}
+
+.footerDiv {
+    background-color: #122236;
+    border-top: 1px solid;
+    width: 80%;
+    height: 15vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 10%;
+    transition: 1s ease;
+
+}
+
+
+
+#tag {
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+}
+
+#tag h5 {
+    font-size: 20px;
+    font-weight: 100;
+    margin: 2% 10% 0 0;
+    transition: 1s ease;
+    color: #4D8DDB;
+}
+
+.copyright {
+    align-self: baseline;
+    font-size: 22px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    text-underline-offset: 5px;
+    /* line-height: 0; */
+    transition: 1s ease;
+}
+
+.exam {
+    justify-self: last baseline;
+    letter-spacing: 3px;
+    margin-bottom: 1%;
+    /* line-height: 140%; */
+    transition: 1s ease;
+}

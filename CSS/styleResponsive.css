@@ -1,0 +1,718 @@
+@keyframes reveal {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .competenceSection span {
+        font-size: 40px;
+        text-decoration: none;
+        width: 30%;
+        align-self: first baseline;
+        justify-self: baseline;
+    }
+
+    .myExperience p {
+        font-size: 23px;
+    }
+    .contactDivInfo div h1{
+        font-size: 13px;
+    }
+
+    .contactDivInfo div h3{
+        font-size: 12px;
+    }
+
+    .aboutMeDiv p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:1010px) {
+
+    header {
+
+        height: 10vh;
+        top: 1.5vh;
+    }
+
+    nav {
+        width: 60%;
+    }
+
+    .containerCompetence {
+        height: 315vh;
+    }
+
+
+    .info {
+        font-size: 20px;
+    }
+
+    #portfolio {
+        font-size: 55px;
+    }
+
+    .competenceSection span {
+        font-size: 30px;
+        text-decoration: none;
+        width: 30%;
+        align-self: first baseline;
+        justify-self: baseline;
+    }
+
+}
+
+@media screen and (max-width:980px) {
+    .whoAmI {
+        align-self: center;
+        margin: 0;
+        font-size: 300%;
+    }
+
+    .myExperience {
+        width: 90%;
+        height: 20vh;
+    }
+
+    .myExperience p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:930px) {
+
+    .meSection {
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    nav {
+        border: none;
+    }
+
+
+    .myExperience legend {
+        padding: 0 10%;
+    }
+
+
+  
+
+    #downArrow img {
+        display: none;
+    }
+
+    .competenceSection span {
+        font-size: 25px;
+        text-decoration: none;
+        width: 30%;
+        align-self: first baseline;
+        justify-self: baseline;
+    }
+
+    
+    .aboutMeDiv p{
+        font-size: 12   px;
+    }
+}
+
+
+@media screen and (max-width:890px) {
+    .aboutMeDiv p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .whoAmI {
+        font-size: 200%;
+    }
+
+    .info {
+        font-size: 15px;
+    }
+
+    .competenceSection span {
+        text-decoration: none;
+    }
+    
+
+}
+
+
+
+
+@media screen and (max-width:840px) {
+
+    .subSection {
+        border: 1px solid;
+        text-decoration: none;
+    }
+
+    .subSection p {
+        font-size: 15px;
+    }
+
+    .plusInfoDivLinguistique p {
+        font-size: 25px;
+    }
+
+    .footerPicture {
+        display: none;
+    }
+
+    .contactSection{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contactSection h1{
+        font-size: 17px;
+    }
+
+    .contactDiv {
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    .contactDivInfo {
+        padding: 0;
+        width:95%;
+        border-radius: 10px;
+    }
+
+    .contactDivInfo div {
+        width: 50%;
+        height: 25%;
+        line-height: 100%;
+    }
+
+    .contactDivInfo div h1 {
+        font-size: 15px;
+    }
+
+    .contactDivInfo div h3 {
+        font-size: 12px;
+    }
+
+    #callMe {
+        height: auto;
+        padding: 2%;
+    }
+
+    .contactMe {
+        width: 95%;
+    }
+
+    .footerDiv {
+        height: 20%;
+    }
+
+    .copyright {
+        display: flex;
+        text-wrap: wrap;
+        line-height: 200%;
+        font-size: 18px;
+    }
+    .exam{
+        font-size: 10px;
+    }
+
+    .footerDiv hr {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:710px) {
+
+    .subSection {
+        border: 1px solid;
+        font-size: 11px;
+        text-decoration: none;
+    }
+}
+
+
+@media screen and (max-width:760px) {
+    .whoAmI {
+        font-size: 200%;
+    }
+
+    .reseauLogo a {
+        width: 40px;
+    }
+
+    #portfolio {
+        font-size: 40px;
+    }
+    .aboutMeDiv p{
+        font-size: 11.5px;
+    }
+}
+
+
+@media screen and (max-width:690px) {
+    .plusInfoDivLinguistique p {
+        font-size: 23px;
+    }
+}
+
+
+
+
+@media screen and (max-width:680px) {
+    .profil span u {
+        line-height: 200%;
+    }
+
+    .profil span b {
+        font-size: 35px;
+        line-height: 200%;
+    }
+
+
+
+    .competenceSection span {
+        animation: none;
+    }
+    .aboutMeDiv p{
+        font-size: 11px;
+    }
+
+}
+
+
+@media screen and (max-width:650px) {
+
+
+    .meSection {
+        animation: none;
+    }
+
+
+    #portfolio {
+        letter-spacing: 20px;
+        width: 80%;
+        transform: skewX(10deg);
+    }
+
+
+    header {
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap-reverse;
+        flex-direction: row;
+    }
+
+    .headerHided {
+        height: 40vh;
+    }
+
+    .afficherLeMenu {
+        display: flex;
+    }
+
+    .cacherLeMenuAnimated {
+        animation: rotate 1s forwards;
+    }
+
+
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #4d8ddb1f;
+        align-self: last baseline;
+        justify-self: start;
+        height: 25vh;
+        line-height: 200%;
+    }
+
+    nav .info {
+        height: 25%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        border-bottom: 1px solid #122236;
+        text-underline-offset: 0.1px;
+    }
+
+    .aboutMeDiv p{
+        font-size: 10px;
+    }
+
+    .subSection {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-evenly;
+    }
+
+
+    .subSection img {
+        width: 90%;
+        height: 70%;
+    }
+
+    .competenceSection span {
+        width: 50%;
+        font-size: 20px;
+        border: 1px solid;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .plusInfoDivDesignShow,
+    .plusInfoDivDeveloppingShow,
+    .plusInfoDivLinguistiqueShow,
+    .plusInfoDivBureautiqueShow,
+    .plusInfoDivBatimentShow {
+        width: 90%;
+        height: 70%;
+        padding: 1.5%;
+    }
+
+
+
+    .plusInfoDivLinguistique p {
+        font-size: 27px;
+    }
+
+    .plusInfo {
+        border-radius: 30px;
+        width: 40%;
+        font-size: 10px;
+        align-self: first baseline;
+        margin: 0;
+        padding: 0;
+    }
+
+    .exerienceSectionHided {
+        top: 45vh;
+    }
+
+    .myExperience legend {
+        font-size: 20px;
+    }
+
+    .myExperience p {
+        font-size: 17px;
+    }
+
+    .contactSection h1{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-height: 560px) {
+    .meSection {
+        /* border: 2px solid red; */
+        flex-direction: row-reverse;
+        align-items: last baseline;
+        justify-content: center;
+    }
+
+    .profil {
+        margin: 0;
+        /* border: 2px solid red; */
+        width: 60%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 70%;
+    }
+
+    .profil span u {
+        line-height: 150%;
+
+    }
+
+    .profilPicture {
+        width: 40%;
+        height: 40%;
+    }
+
+    .whoAmI {
+        margin: 0;
+        width: 40%;
+        align-self: center;
+        align-items: center;
+    }
+
+
+    .myExperience p {
+        font-size: 15px;
+    }
+
+    .contactSection h1{
+        font-size: 7px;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .subSection {
+        text-align: center;
+        line-height: 130%;
+    }
+
+    .myExperience legend {
+        font-size: 18px;
+    }
+
+    .myExperience p {
+        font-size: 15px;
+    }
+
+    .profilPicture {
+        width: 30%;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+
+    .aboutMe h2{
+        font-size: 11px;
+    }
+    .aboutMeDiv{
+        width: 90%;
+        height: 20vh;
+    }
+    .aboutMeDiv p{
+        font-size: 8px;
+    }
+}
+.aboutMeDiv abbr{
+    text-underline-offset: 2px;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    .competenceSection span {
+        width: 55%;
+    }
+
+
+    .myExperience legend {
+        font-size: 16px;
+    }
+
+    .profil span u {
+        line-height: 150%;
+        text-decoration: none;
+    }
+
+    .profil span b {
+        font-size: 35px;
+        line-height: 130%;
+    }
+
+    .whoAmI span {
+        font-size: 25px;
+    }
+
+    .reseauLogo a {
+        width: 30px;
+    }
+
+}
+
+
+@media screen and (max-width: 450px) {
+
+    #portfolio {
+        font-size: 35px;
+        letter-spacing: 10px;
+    }
+
+    .subSection button {
+        font-size: 12px;
+        width: 25%;
+    }
+
+    .competenceSection span {
+        font-size: 15px;
+    }
+
+    .subSection img {
+        height: 60%;
+    }
+
+    .myExperience legend {
+        font-size: 15px;
+    }
+
+    .plusInfoDivDesignShow,
+    .plusInfoDivDeveloppingShow,
+    .plusInfoDivLinguistiqueShow,
+    .plusInfoDivBureautiqueShow,
+    .plusInfoDivBatimentShow {
+        width: 90%;
+        height: 60%;
+    }
+
+    .plusInfoDiv {
+        line-height: 100%;
+    }
+
+    .plusInfoDiv ul {
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .subSection button {
+        font-size: 11px;
+    }
+
+    .myExperience p {
+        font-size: 13px;
+    }
+
+    .myExperience legend {
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-width: 360px) {
+    .subSection button {
+        font-size: 10px;
+    }
+
+    .copyright{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    body{
+        background: none ;
+    }
+    .subSection button {
+        font-size: 9px;
+    }
+
+    #portfolio {
+        font-size: 30px;
+    }
+
+    .subSection p {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .aboutMe h2{
+        font-size: 10px;
+    }
+
+    .aboutMeDiv p{
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 295px) {
+
+    nav .info{
+        font-size: 12px;
+    }
+
+    #portfolio{
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    .afficherLeMenu{
+        width: 20px;
+        height: 20px;
+    }
+
+    .afficherLeMenu svg{
+        width: 20px;
+    }
+
+    .profil span b{
+        font-size: 23px;
+    }
+
+    .profil span u{
+        font-size: 15px;
+    }
+
+    .whoAmI span{
+        font-size: 15px;
+    }
+
+    .whoAmI span b{
+        font-weight: 100;
+    }
+
+    .reseauLogo a{
+        width: 20px;
+    }
+
+
+    .subSection button {
+        font-size: 12px;
+        width: 50%;
+    }
+
+    .competenceSection span {
+        width: 90%;
+    }
+
+    .subSection img {
+        height: 60%;
+    }
+
+    .subSection p {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .afficherLeMenu {
+        width: 25px;
+    }
+
+    .aboutMe h2{
+        font-size: 9px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:270px) {
+    #portfolio {
+        font-size: 20px;
+    }
+
+    .afficherLeMenu {
+        width: 20px;
+    }
+
+    .aboutMe h2{
+        font-size: 8px;
+    }
+
+}

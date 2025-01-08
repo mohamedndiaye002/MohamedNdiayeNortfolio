@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/sectionStyle.css">
+    <link rel="stylesheet" href="../CSS/styleResponsive.css">
+    <title>Mon Portfolio</title>
+</head>
+
+<body>
+
+    <div class="containerContact">
+
+        <header class='myHeader'>
+            <nav class="menu">
+                <a href="../index.html" class="info">About Me</a>
+                <a href="../HTML/competence.html" class="info" id="Comp">Compétence</a>
+                <a href="../HTML/experience.html" class="info">Projets</a>
+                <a href="../HTML/contacts.html" class="info"
+                    style="text-decoration: underline; text-underline-offset: 20px;">Contacts</a>
+            </nav>
+            <span id="portfolio" class="port">Portfolio</span>
+            <span class="afficherMenu afficherLeMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 50 50">
+                    <path
+                        style="fill: #4D8DDB;stroke: #4D8DDB;stroke-width:2;stroke-linecap:square;stroke-miterlimit:20;"
+                        d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z">
+                    </path>
+                </svg>
+            </span>
+        </header>
+
+        <section id="contactSection" class="contactSection">
+            <div class="contactDiv">
+                <div class="contactDivInfo">
+                    <div id="callMe">Contactez-moi</div>
+                    <div>
+                        <h1>Phone Number</h1>
+                        <h3>+221 76 418 92 72</h3>
+                    </div>
+                    <div>
+                        <h1>E.mail</h1>
+                        <h3>2mohamedn002@gmail.com</h3>
+                    </div>
+                    <div>
+                        <h1>linkedIn</h1>
+                        <h3>Mohamed Ndiaye</h3>
+                    </div>
+                    <div>
+                        <h1>github</h1>
+                        <h3>mohamedndiaye002</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="contactMe">
+                <h1>Veuillez renseigner ce formulaire pour collaborer avec nous</h1>
+                <form action="" name="myForm" onsubmit="return validateForm()">
+                    <label for="prenom">Prenom</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Votre Prenom">
+                    <label for="nom">Nom</label>
+                    <input type="text" name="" id="" placeholder="Votre Nom">
+                    <label for="email">E.mail</label>
+                    <input type="email" name="" id="" placeholder="Votre E.mail">
+                    <label for="telephone">Telephone</label>
+                    <input type="tel" name="" id="" placeholder="Votre numero Telephone">
+                    <input type="submit" id="subm">
+                    <p id="result" style="width: 100%;"></p>
+                </form>
+            </div>
+            <div class="footerDiv">
+                <div class="copyright">
+                    copyright: <b><u>Mohamed Ndiaye</u></b>
+                </div>
+                <div class="exam">
+                    Examen Développement Web / M. Mbaye / Décembre 2024
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+
+    <script src="../JS/contactScript.js"></script>
+</body>
+
+</html>
